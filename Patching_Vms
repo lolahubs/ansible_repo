@@ -1,0 +1,10 @@
+---
+- name: patching rhel vms
+  hosts: all
+  become: yes
+
+  tasks:
+         - name: creating ansible yml for patching vms
+           yum:
+                name: "*"
+                state: latest
