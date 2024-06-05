@@ -1,10 +1,17 @@
 ---
-- name: patching rhel vms
+- name: patching rhel & Ubuntu vms
   hosts: all
   become: yes
 
   tasks:
-         - name: creating ansible yml for patching vms
+         - name: Patching Redhat servers
            yum:
                 name: "*"
                 state: latest
+           when: ansible_os_family == "RedHat"
+
+          - name: Patching Ubuntu Servers
+            apt:
+                 name: "*"
+                 state: latest
+            when: ansible_os_family == "Debian"
