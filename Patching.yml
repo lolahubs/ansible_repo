@@ -10,7 +10,7 @@
                 state: latest
            when: ansible_os_family == "RedHat"
 
-          - name: Patching Ubuntu Servers
+         - name: Patching Ubuntu Servers
             apt:
                  name: "*"
                  state: latest
