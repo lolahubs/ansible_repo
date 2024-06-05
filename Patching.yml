@@ -4,14 +4,14 @@
   become: yes
 
   tasks:
-         - name: Patching Redhat servers
-           yum:
-                name: "*"
-                state: latest
-           when: ansible_os_family == "RedHat"
+    - name: Patching Redhat servers
+      yum:
+        name: "*"
+        state: latest
+      when: ansible_os_family == "RedHat"
 
-         - name: Patching Ubuntu Servers
-            apt:
-                 name: "*"
-                 state: latest
-            when: ansible_os_family == "Debian"
+    - name: Patching Ubuntu servers
+      apt:
+        name: "*"
+        state: latest
+      when: ansible_os_family == "Debian"
