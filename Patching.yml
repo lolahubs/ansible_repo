@@ -1,7 +1,6 @@
 ---
 - name: patching rhel & Ubuntu vms
   hosts: all
-  become: yes
 
   tasks:
     - name: Patching Redhat servers
