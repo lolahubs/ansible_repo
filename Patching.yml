@@ -3,7 +3,7 @@
   hosts: localhost
 
   tasks:
-    - name: Patching Redhat servers
+    - name: Patching Redhat server
       yum:
         name: "*"
         state: latest
