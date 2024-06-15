@@ -1,6 +1,6 @@
 ---
 - name: patching rhel & Ubuntu vm
-  hosts: all
+  hosts: localhost
 
   tasks:
     - name: Patching Redhat servers
