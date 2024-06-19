@@ -1,6 +1,6 @@
 ---
 - name: insatlling apache on rhel7 vm 
-  hosts: web
+  hosts: all
 
   tasks:
       - name: installing apache on tghe new rhel7 machine
