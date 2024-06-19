@@ -1,0 +1,9 @@
+---
+- name: insatlling apache on rhel7 vm 
+  hosts: all
+
+  tasks:
+      - name: installing apache on tghe new rhel7 machine
+        yum:
+            name: httpd
+            state: present
