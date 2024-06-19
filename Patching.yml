@@ -1,5 +1,5 @@
 ---
-- name: patching rhel & Ubuntu vms
+- name: patching rhel & Ubuntu vm
   hosts: localhost
 
   tasks:
